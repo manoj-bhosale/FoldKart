@@ -1,0 +1,137 @@
+body {
+  padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  background-color: #f4f4f4;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+
+.nav-bar-color {
+  background-color: maroon;
+}
+
+.hero-spacer {
+  margin-top: 50px;
+}
+
+.hero-feature {
+  margin-bottom: 30px;
+}
+
+footer {
+  margin: 50px 0;
+}
+
+.form-padding {
+  padding: 35px;
+}
+
+.sub-header-style {
+  background-color: #000000;
+  border-radius: 26px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.brand-logo {
+  margin-top: -9px;
+  width: 127px;
+}
+
+/*---------------- CSS For products in Home page ---------------*/
+
+.product-box {
+  background-color: mintcream;
+  border: 1px solid black;
+  border-radius: 26px;
+  box-shadow: 4px 4px;
+  height: 500px;
+}
+
+.product-box .product-thum-image-url {
+  height: 285px !important;
+  margin-top: 28px;
+  width: 166px;
+}
+
+.product-box .product-name {
+  color: indigo;
+  font-size: 15px;
+  font-style: oblique;
+}
+
+.product-box .product-price {
+  color: indigo;
+  font-size: 19px;
+  font-style: oblique;
+}
+
+.heart-style {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+
+
+/* CSS for Contact Page */
+
+.bigicon {
+  font-size: 35px;
+  color: #36A0FF;
+} 
+
+/* CSS for About Page */
+
+.contact-template {
+  padding: 53px;
+  background-color: white;
+}
+
+.img-center {
+  margin: 0 auto;
+}
+
+.join-me-on {
+  padding: 23px;
+}
+
+.fb {
+  background: url("../images/fb_b.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding: 14px;
+}
+.fb:hover {
+  background: url("../images/fb_o.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding: 14px;
+}
+.tweet {
+  background: url("../images/twitter_b.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding: 14px;
+}
+.tweet:hover {
+  background: url("../images/twitter_o.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding: 14px;
+}
+.google {
+  background: url("../images/gplus_b.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding: 14px;
+}
+.google:hover {
+  background: url("../images/gplus_o.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding: 14px;
+}
