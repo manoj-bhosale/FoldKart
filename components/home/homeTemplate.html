@@ -86,16 +86,18 @@
         </div>
         <div ng-if="!isLoading"class="col-md-3 col-sm-6 hero-feature" ng-repeat="product in filteredProducts">
             <div class="thumbnail product-box">
-                <a href="">
+                <a ng-href="#/product/{{product.id}}">
                     <img src="{{product.img_url}}" alt="No image found" class="product-thum-image-url">
                 </a>
                 <div class="caption">
                     <h3 class="product-price">{{product.price | currency : "Rs. " : "0"}}</h3>
                     <h3 class="product-name">{{product.name}}</h3>
                     <p>
-                        <a href="" class="btn btn-primary">Buy Now!</a> 
+                        <a ng-href="" ng-click="addInCart(product.id)" class="btn btn-primary">Buy Now!</a> 
                         <a href="" title="Add into your wishlist">
-                            <i class="fa fa-heart-o heart-style">
+                            <i ng-if="userObject.wishlist_products.indexOf(product.id)<0" class="fa fa-heart-o heart-style" ng-click="addIntoWishlist(product.id)">
+                            </i>
+                            <i ng-if="userObject.wishlist_products.indexOf(product.id)>=0" class="fa fa-heart heart-style cursor-default">
                             </i>
                         </a>
                     </p>

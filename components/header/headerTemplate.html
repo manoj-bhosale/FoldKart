@@ -34,21 +34,21 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li>
-                        <a href="">
+                        <a href="#/profile">
                           <i class="fa fa-user"></i>&nbsp;
                           My profile
                         </a>
                       </li>
                       <li class="divider"></li>
                       <li>
-                        <a href="">
+                        <a href="" data-toggle="modal" data-target="#wishlistModal" ng-click="getMyWishlist()">
                           <i class="fa fa-list-alt"></i>&nbsp;
                           My Wishlist
                         </a>
                       </li>
                       <li class="divider"></li>
                       <li>
-                        <a href="">
+                        <a href="#/orders">
                           <i class="fa fa-cube"></i>&nbsp;
                           My Orders
                         </a>
@@ -75,7 +75,7 @@
                     </a> 
                 </li>
                 <li>
-                    <a href="">
+                    <a href="" data-toggle="modal" data-target="#cartModal">
                         <img src="images/cart.png" width="38%">
                     </a>
                 </li>
@@ -89,3 +89,6 @@
 <!-- included all required directive in this header -->
 <login></login>
 <signup></signup>
+<wish-list></wish-list>
+<cart items="cart"></cart>
+<div ng-include src="'utility/utilityModal.html'"></div>

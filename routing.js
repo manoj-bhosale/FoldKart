@@ -19,6 +19,30 @@ angular.module('foldKart', ['ngRoute','ngSanitize','ngStorage']).config(function
 			controller  : 'aboutController'
 		})
 
+		// route for the product page
+		.when('/product/:product_id', {
+			templateUrl : 'components/product/productTemplate.html',
+			controller  : 'productController'
+		})
+
+		// route for the payment page
+		.when('/payment', {
+			templateUrl : 'components/payment/paymentTemplate.html',
+			controller  : 'paymentController'
+		})
+
+		// route for the my orders page
+		.when('/orders', {
+			templateUrl : 'components/orders/ordersTemplate.html',
+			controller  : 'ordersController'
+		})
+
+		// route for the my orders page
+		.when('/profile', {
+			templateUrl : 'components/profile/profileTemplate.html',
+			controller  : 'profileController'
+		})
+
 		.otherwise({redirectTo:'/'});
 
 });
